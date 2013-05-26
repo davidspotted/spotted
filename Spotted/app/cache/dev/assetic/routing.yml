@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'C:/Users/Alexis/Documents/Spotted/svnShare/WEB/PHPWorkSpace/Spotted/Spotted/app/config/routing_dev.yml'

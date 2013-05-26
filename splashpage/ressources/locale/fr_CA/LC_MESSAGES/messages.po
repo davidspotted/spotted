@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Spotted\n"
+"POT-Creation-Date: 2013-03-05 21:15-0500\n"
+"PO-Revision-Date: 2013-05-22 21:33-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Language: French\n"
+
+# Test token 1
+msgid "HELLO_WORLD"
+msgstr "Bonjour Monde!"
+
+# Test token 2
+msgid "TEST_TRANSLATION"
+msgstr "Test de traduction…"
+
+# Error messages
+msgid "ERROR_TITLE"
+msgstr "Oups!"
+
+msgid "ERROR_FOOTER"
+msgstr "Veuillez essayer de nouveau."
+
+msgid "ERROR_INVALID_EMAIL_ADDRESS"
+msgstr "%s n'est pas une adresse courriel valide."
+
+msgid "ERROR_EMAIL_ADDRESS_EXISTS"
+msgstr "L'adresse courriel %s existe déjà dans la base de données."
+
+msgid "ERROR_TOKEN_UNEXISTENT"
+msgstr "Jeton invalide"
+
+msgid "ERROR_USER_UNEXISTENT"
+msgstr "Usager non existant"
+
+# Confirmation messages
+msgid "CONFIRMATION_TITLE"
+msgstr "Bravo!"
+
+msgid "CONFIRMATION_BODY"
+msgstr "Vous serez bientôt spotté! Vous entendrez bientôt parler de nous."
+
+msgid "CONFIRMED_EMAIL_PREREGISTER"
+msgstr "Félicitations, votre adresse courriel a été confirmée."
+
+msgid "CONFIRMATION_THANKYOU"
+msgstr "Merci,"
+
+msgid "CONFIRMATION_SIGNATURE"
+msgstr "L'équipe Spotted"
+
+# Preregister messages
+msgid "PREREGISTER_TITLE"
+msgstr "SPOTTED - Préenregistrez-vous ici"

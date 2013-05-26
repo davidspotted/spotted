@@ -1,0 +1,3 @@
+spotted_home:
+    pattern:      /home
+    defaults:  { _controller: SpottedHomeBundle:Home:index }

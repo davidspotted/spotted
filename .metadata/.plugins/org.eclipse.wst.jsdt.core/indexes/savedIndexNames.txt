@@ -1,0 +1,5 @@
+INDEX VERSION 1.122+C:\eclipse-juno\Spotted\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2150034035.index
+2043557826.index
+3363294612.index
+2425363754.index

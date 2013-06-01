@@ -1,7 +1,12 @@
+spotted_request_listener:
+    resource: "@SpottedRequestListenerBundle/Resources/config/routing.yml"
+    prefix:   /
+
 spotted_home:
     resource: "@SpottedHomeBundle/Resources/config/routing.yml"
     prefix:   /{_locale}
 
+    
 #fos_user_security:
 #    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 #    prefix: /{_locale}

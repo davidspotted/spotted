@@ -1,10 +1,10 @@
-{% extends "SpottedHomeBundle::layout.html.twig" %}
+{% extends "SpottedHomeBundle::desktop.layout.html.twig" %}
  
 {% block title %}{{'login.header.title'|trans }}{% endblock %}
  
 {% block body %}
-Home
+<h1>L'application n'est présentement utilisable qu'avec un mobile.</h1> 
 
-{% include "FOSUserBundle::layout.html.twig" %}
+{% include "FOSUserBundle::desktop.layout.html.twig" %}
 
 {% endblock %}

@@ -25,6 +25,29 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         $allow = array();
         $pathinfo = rawurldecode($pathinfo);
 
+        if (0 === strpos($pathinfo, '/')) {
+            // _assetic_b931461
+            if ($pathinfo === '/css/b931461.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 'b931461',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_b931461',);
+            }
+
+            // _assetic_b931461_0
+            if ($pathinfo === '/css/b931461_desktop_1.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 'b931461',  'pos' => '0',  '_format' => 'css',  '_route' => '_assetic_b931461_0',);
+            }
+
+            // _assetic_d5e4c33
+            if ($pathinfo === '/css/d5e4c33.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 'd5e4c33',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_d5e4c33',);
+            }
+
+            // _assetic_d5e4c33_0
+            if ($pathinfo === '/css/d5e4c33_mobile_1.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 'd5e4c33',  'pos' => '0',  '_format' => 'css',  '_route' => '_assetic_d5e4c33_0',);
+            }
+
+        }
+
         // _wdt
         if (0 === strpos($pathinfo, '/_wdt') && preg_match('#^/_wdt/(?P<token>[^/]+)$#s', $pathinfo, $matches)) {
             return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController::toolbarAction',)), array('_route' => '_wdt'));
@@ -102,6 +125,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'Sensio\\Bundle\\DistributionBundle\\Controller\\ConfiguratorController::finalAction',  '_route' => '_configurator_final',);
             }
 
+        }
+
+        // spotted_request_listener_homepage
+        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]+)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'SpottedRequestListenerBundle:Default:index',)), array('_route' => 'spotted_request_listener_homepage'));
         }
 
         // spotted_home_homepage

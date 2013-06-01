@@ -1,0 +1,7 @@
+parameters:
+#    spotted_request_listener.example.class: Spotted\RequestListenerBundle\Example
+
+services:
+#    spotted_request_listener.example:
+#        class: %spotted_request_listener.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

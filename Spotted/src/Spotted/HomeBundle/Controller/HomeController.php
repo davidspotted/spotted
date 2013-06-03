@@ -13,6 +13,6 @@ class HomeController extends Controller
     public function indexAction()
     {
         //return $this->render('SpottedHomeBundle:Home:index.html.twig');
-       return array('post' => '');
+       return array();
     }
 }

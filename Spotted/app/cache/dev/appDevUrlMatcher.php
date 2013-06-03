@@ -26,24 +26,14 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         $pathinfo = rawurldecode($pathinfo);
 
         if (0 === strpos($pathinfo, '/')) {
-            // _assetic_b931461
-            if ($pathinfo === '/css/b931461.css') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => 'b931461',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_b931461',);
+            // _assetic_22b4525
+            if ($pathinfo === '/css/22b4525.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '22b4525',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_22b4525',);
             }
 
-            // _assetic_b931461_0
-            if ($pathinfo === '/css/b931461_desktop_1.css') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => 'b931461',  'pos' => '0',  '_format' => 'css',  '_route' => '_assetic_b931461_0',);
-            }
-
-            // _assetic_d5e4c33
-            if ($pathinfo === '/css/d5e4c33.css') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => 'd5e4c33',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_d5e4c33',);
-            }
-
-            // _assetic_d5e4c33_0
-            if ($pathinfo === '/css/d5e4c33_mobile_1.css') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => 'd5e4c33',  'pos' => '0',  '_format' => 'css',  '_route' => '_assetic_d5e4c33_0',);
+            // _assetic_22b4525_0
+            if ($pathinfo === '/css/22b4525_mobile_1.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '22b4525',  'pos' => '0',  '_format' => 'css',  '_route' => '_assetic_22b4525_0',);
             }
 
         }
@@ -139,6 +129,27 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             }
 
             return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Spotted\\HomeBundle\\Controller\\HomeController::indexAction',)), array('_route' => 'spotted_home_homepage'));
+        }
+
+        // fos_user_security_login
+        if (preg_match('#^/(?P<_locale>[^/]+)/login$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'FOS\\UserBundle\\Controller\\SecurityController::loginAction',)), array('_route' => 'fos_user_security_login'));
+        }
+
+        // fos_user_security_check
+        if (preg_match('#^/(?P<_locale>[^/]+)/login_check$#s', $pathinfo, $matches)) {
+            if ($this->context->getMethod() != 'POST') {
+                $allow[] = 'POST';
+                goto not_fos_user_security_check;
+            }
+
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'FOS\\UserBundle\\Controller\\SecurityController::checkAction',)), array('_route' => 'fos_user_security_check'));
+        }
+        not_fos_user_security_check:
+
+        // fos_user_security_logout
+        if (preg_match('#^/(?P<_locale>[^/]+)/logout$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'FOS\\UserBundle\\Controller\\SecurityController::logoutAction',)), array('_route' => 'fos_user_security_logout'));
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

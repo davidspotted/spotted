@@ -3,8 +3,8 @@
 {% block title %}{{'login.header.title'|trans }}{% endblock %}
  
 {% block body %}
-<h1>Mobile Version</h1>
+<h1>Spotted</h1>
 
-{% include "FOSUserBundle::mobile.layout.html.twig" %}
+{% render 'FOSUserBundle:Security:Login' %}
 
 {% endblock %}

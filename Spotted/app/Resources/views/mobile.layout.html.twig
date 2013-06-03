@@ -5,16 +5,23 @@
  
     <title>{% block title %} {% endblock %}</title>
  
-    {% block stylesheets %}
-      	
-    {% endblock %}
+	{% block stylesheets %}
+		{% stylesheets filter='cssrewrite, ?yui_css'
+			'@SpottedHomeBundle/Resources/public/css/mobile.css' %}
+	  		<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+		{% endstylesheets %}
+	{% endblock %}
   </head>
  
   <body>  
   
+  <div id="mobileContainer">
+  
   {% block body %}
   
   {% endblock %}  
+  
+  </div>
  
   {% block javascripts %}
 

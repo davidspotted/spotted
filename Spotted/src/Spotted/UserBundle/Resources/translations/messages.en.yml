@@ -1,6 +1,8 @@
-login: 
+home: 
     header: 
         title: Welcome to Spotted - Login
     
-
+    body:
+        login: Log In
+        signup: Sign Up
     

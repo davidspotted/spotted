@@ -1,3 +1,47 @@
+div#mobileContainer {
+	width:480px;
+	margin: 0 auto;
+}
+
 h1 {
 	color: red;
+	text-align:center;
+}
+	
+.div-home-caption {
+	display: block;
+    float: left;
+    width: 240px;
+    text-align: center;
+}
+
+
+#div-login-form {
+	border-style: solid;
+    border-width: 1px;
+    display: block;
+    height: 390px;
+    margin: 60px auto 0;
+    padding: 15px;
+}
+
+#div-login-form form label {
+	display:block;
+}
+
+#div-login-form form #username {
+	width: 440px;
+}
+
+#div-login-form form #password {
+	width: 440px;
+}
+
+#div-login-form form #_submit {
+	display: block;
+    margin: 0 auto;
+}
+
+#div-home-selector {
+	margin: 0 auto;
 }

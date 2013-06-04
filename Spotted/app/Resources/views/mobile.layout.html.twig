@@ -6,10 +6,7 @@
     <title>{% block title %} {% endblock %}</title>
  
 	{% block stylesheets %}
-		{% stylesheets filter='cssrewrite, ?yui_css'
-			'@SpottedHomeBundle/Resources/public/css/mobile.css' %}
-	  		<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
-		{% endstylesheets %}
+	  		<link rel="stylesheet" href="{{ asset('bundles/spottedhome/css/mobile.css') }}" type="text/css" /> 
 	{% endblock %}
   </head>
  

@@ -6,6 +6,12 @@
 .LSOverride
 Icon
 
+/Spotted/web/bundles/
+/Spotted//app/bootstrap*
+/Spotted//app/cache/*
+/Spotted//app/logs/*
+/Spotted//vendor/
+/Spotted//app/config/parameters.yml
 
 # Thumbnails
 ._*
@@ -14,9 +20,3 @@ Icon
 .Spotlight-V100
 .Trashes
 
-/web/bundles/
-/app/bootstrap*
-/app/cache/*
-/app/logs/*
-/vendor/
-/app/config/parameters.yml

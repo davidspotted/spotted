@@ -74,6 +74,8 @@
   'SwiftmailerBundle:Collector:swiftmailer.html.twig' => 'C:\\Users\\Alexis\\Documents\\Spotted\\gitRepo\\spotted\\Spotted\\vendor\\symfony\\swiftmailer-bundle\\Symfony\\Bundle\\SwiftmailerBundle/Resources/views/Collector/swiftmailer.html.twig',
   'DoctrineBundle:Collector:db.html.twig' => 'C:\\Users\\Alexis\\Documents\\Spotted\\gitRepo\\spotted\\Spotted\\vendor\\doctrine\\doctrine-bundle\\Doctrine\\Bundle\\DoctrineBundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => 'C:\\Users\\Alexis\\Documents\\Spotted\\gitRepo\\spotted\\Spotted\\vendor\\doctrine\\doctrine-bundle\\Doctrine\\Bundle\\DoctrineBundle/Resources/views/Collector/explain.html.twig',
+  'SpottedUserBundle::desktop.layout.html.twig' => 'C:\\Users\\Alexis\\Documents\\Spotted\\gitRepo\\spotted\\Spotted\\src\\Spotted\\UserBundle/Resources/views/desktop.layout.html.twig',
+  'SpottedUserBundle::mobile.layout.html.twig' => 'C:\\Users\\Alexis\\Documents\\Spotted\\gitRepo\\spotted\\Spotted\\src\\Spotted\\UserBundle/Resources/views/mobile.layout.html.twig',
   'FOSUserBundle:ChangePassword:changePassword.html.twig' => 'C:\\Users\\Alexis\\Documents\\Spotted\\gitRepo\\spotted\\Spotted\\vendor\\friendsofsymfony\\user-bundle\\FOS\\UserBundle/Resources/views/ChangePassword/changePassword.html.twig',
   'FOSUserBundle:ChangePassword:changePassword_content.html.twig' => 'C:\\Users\\Alexis\\Documents\\Spotted\\gitRepo\\spotted\\Spotted\\vendor\\friendsofsymfony\\user-bundle\\FOS\\UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig',
   'FOSUserBundle:Group:edit.html.twig' => 'C:\\Users\\Alexis\\Documents\\Spotted\\gitRepo\\spotted\\Spotted\\vendor\\friendsofsymfony\\user-bundle\\FOS\\UserBundle/Resources/views/Group/edit.html.twig',

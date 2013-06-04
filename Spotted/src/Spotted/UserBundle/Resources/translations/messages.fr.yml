@@ -1,6 +1,9 @@
-login: 
+home: 
     header:
         title: Bienvenu sur Spotted - Connexion
-    
+        
+    body:
+        login: Se connecter
+        signup: S'enregistrer
 
     

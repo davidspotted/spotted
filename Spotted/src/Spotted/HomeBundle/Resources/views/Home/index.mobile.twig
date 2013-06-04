@@ -1,10 +1,14 @@
 {% extends "SpottedHomeBundle::mobile.layout.html.twig" %}
  
-{% block title %}{{'login.header.title'|trans }}{% endblock %}
+{% block title %}{{'home.header.title'|trans }}{% endblock %}
  
 {% block body %}
 <h1>Spotted</h1>
-
-{% render 'FOSUserBundle:Security:Login' %}
-
+	<div id="div-home-selector">
+		<div class="div-home-caption">{{'home.body.login'|trans }}</div>
+		<div class="div-home-caption">{{'home.body.signup'|trans }}</div>
+	</div>
+	<div id="div-login-form">
+		{% render 'FOSUserBundle:Security:Login' %}
+	</div>
 {% endblock %}

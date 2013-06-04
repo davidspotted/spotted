@@ -26,14 +26,14 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         $pathinfo = rawurldecode($pathinfo);
 
         if (0 === strpos($pathinfo, '/')) {
-            // _assetic_22b4525
-            if ($pathinfo === '/css/22b4525.css') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => '22b4525',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_22b4525',);
+            // _assetic_b931461
+            if ($pathinfo === '/css/b931461.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 'b931461',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_b931461',);
             }
 
-            // _assetic_22b4525_0
-            if ($pathinfo === '/css/22b4525_mobile_1.css') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => '22b4525',  'pos' => '0',  '_format' => 'css',  '_route' => '_assetic_22b4525_0',);
+            // _assetic_b931461_0
+            if ($pathinfo === '/css/b931461_desktop_1.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 'b931461',  'pos' => '0',  '_format' => 'css',  '_route' => '_assetic_b931461_0',);
             }
 
         }

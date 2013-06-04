@@ -152,6 +152,48 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'FOS\\UserBundle\\Controller\\SecurityController::logoutAction',)), array('_route' => 'fos_user_security_logout'));
         }
 
+        // fos_user_registration_register
+        if (preg_match('#^/(?P<_locale>[^/]+)/register/?$#s', $pathinfo, $matches)) {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'fos_user_registration_register');
+            }
+
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'FOS\\UserBundle\\Controller\\RegistrationController::registerAction',)), array('_route' => 'fos_user_registration_register'));
+        }
+
+        // fos_user_registration_check_email
+        if (preg_match('#^/(?P<_locale>[^/]+)/register/check\\-email$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_fos_user_registration_check_email;
+            }
+
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'FOS\\UserBundle\\Controller\\RegistrationController::checkEmailAction',)), array('_route' => 'fos_user_registration_check_email'));
+        }
+        not_fos_user_registration_check_email:
+
+        // fos_user_registration_confirm
+        if (preg_match('#^/(?P<_locale>[^/]+)/register/confirm/(?P<token>[^/]+)$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_fos_user_registration_confirm;
+            }
+
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'FOS\\UserBundle\\Controller\\RegistrationController::confirmAction',)), array('_route' => 'fos_user_registration_confirm'));
+        }
+        not_fos_user_registration_confirm:
+
+        // fos_user_registration_confirmed
+        if (preg_match('#^/(?P<_locale>[^/]+)/register/confirmed$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_fos_user_registration_confirmed;
+            }
+
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'FOS\\UserBundle\\Controller\\RegistrationController::confirmedAction',)), array('_route' => 'fos_user_registration_confirmed'));
+        }
+        not_fos_user_registration_confirmed:
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

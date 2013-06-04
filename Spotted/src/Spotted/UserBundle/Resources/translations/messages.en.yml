@@ -5,4 +5,5 @@ home:
     body:
         login: Log In
         signup: Sign Up
+        connect: Connect
     

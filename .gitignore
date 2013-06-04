@@ -7,11 +7,11 @@
 Icon
 
 /Spotted/web/bundles/
-/Spotted//app/bootstrap*
-/Spotted//app/cache/*
-/Spotted//app/logs/*
-/Spotted//vendor/
-/Spotted//app/config/parameters.yml
+/Spotted/app/bootstrap*
+/Spotted/app/cache/*
+/Spotted/app/logs/*
+/Spotted/vendor/
+/Spotted/app/config/parameters.yml
 
 # Thumbnails
 ._*

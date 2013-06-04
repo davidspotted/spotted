@@ -82,7 +82,10 @@ $catalogue = new MessageCatalogue('fr', array (
   ),
   'messages' => 
   array (
-    'login.header.title' => 'Bienvenu sur Spotted - Connexion',
+    'home.header.title' => 'Bienvenu sur Spotted - Connexion',
+    'home.body.login' => 'Se connecter',
+    'home.body.signup' => 'S\'enregistrer',
+    'home.body.connect' => 'Connexion',
     'Symfony2 is great' => 'J\'aime Symfony2',
   ),
   'FOSUserBundle' => 
@@ -227,7 +230,10 @@ $catalogueEn = new MessageCatalogue('en', array (
   ),
   'messages' => 
   array (
-    'login.header.title' => 'Welcome to Spotted - Login',
+    'home.header.title' => 'Welcome to Spotted - Login',
+    'home.body.login' => 'Log In',
+    'home.body.signup' => 'Sign Up',
+    'home.body.connect' => 'Connect',
   ),
   'FOSUserBundle' => 
   array (

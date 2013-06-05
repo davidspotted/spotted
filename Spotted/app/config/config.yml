@@ -55,6 +55,7 @@ doctrine:
 fos_user:
     db_driver:     orm                        # Le type de BDD à utiliser, nous utilisons l'ORM Doctrine depuis le début
     firewall_name: main                       # Le nom du firewall duquel on utilisera ces utilisateurs
+#    use_listener: false
     user_class:    Spotted\UserBundle\Entity\User # La classe de l'entité User que nous utilisons
     registration:
         form:
@@ -75,7 +76,7 @@ services:
             - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
             
     spotted.registration.form.type:
-        class: Spotted\UserBundleForm\RegistrationType
+        class: Spotted\UserBundle\Form\RegistrationFormType
         arguments: [%fos_user.model.user.class%]
         tags:
             - { name: form.type, alias: userbundle_user_registration }

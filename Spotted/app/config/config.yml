@@ -56,6 +56,9 @@ fos_user:
     db_driver:     orm                        # Le type de BDD à utiliser, nous utilisons l'ORM Doctrine depuis le début
     firewall_name: main                       # Le nom du firewall duquel on utilisera ces utilisateurs
     user_class:    Spotted\UserBundle\Entity\User # La classe de l'entité User que nous utilisons
+    registration:
+        form:
+            type: userbundle_user_registration
     
 # Swiftmailer Configuration
 swiftmailer:
@@ -70,4 +73,10 @@ services:
         class: Spotted\RequestListenerBundle\SpottedRequestListenerBundle
         tags:
             - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+            
+    spotted.registration.form.type:
+        class: Spotted\UserBundleForm\RegistrationType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: userbundle_user_registration }
     

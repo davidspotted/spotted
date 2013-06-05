@@ -21,7 +21,6 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Spotted\UserBundle\SpottedUserBundle(),
         	new FOS\UserBundle\FOSUserBundle(),
-            new Spotted\HomeBundle\SpottedHomeBundle(),
             new Spotted\RequestListenerBundle\SpottedRequestListenerBundle(),
         );
 

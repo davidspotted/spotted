@@ -3,7 +3,7 @@ spotted_request_listener:
     prefix:   /
 
 spotted_home:
-    resource: "@SpottedHomeBundle/Resources/config/routing.yml"
+    resource: "@SpottedUserBundle/Resources/config/routing.yml"
     prefix:   /{_locale}
 
     

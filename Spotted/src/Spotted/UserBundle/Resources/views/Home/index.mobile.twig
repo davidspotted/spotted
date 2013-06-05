@@ -1,0 +1,23 @@
+{% extends "SpottedUserBundle::mobile.layout.html.twig" %}
+ 
+{% block title %}{{'home.header.title'|trans }}{% endblock %}
+ 
+{% block body %}
+<h1>Spotted</h1>
+
+	<div id="div-home-selector">
+		<div class="div-home-caption"><span>{{'home.body.login'|trans }}</span></div>
+		<div class="div-home-caption"><span>{{'home.body.signup'|trans }}</span></div>
+	</div>
+	<div id="div-login-form">
+		{% render 'FOSUserBundle:Security:Login' %}
+		<div id="btnConnect" onclick="connect();"><span>{{ 'home.body.connect'|trans }}</span></div>
+	</div>
+	
+	<div id="div-signup-form">
+		
+	</div>
+	
+	
+
+{% endblock %}

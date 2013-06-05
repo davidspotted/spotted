@@ -122,13 +122,13 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'SpottedRequestListenerBundle:Default:index',)), array('_route' => 'spotted_request_listener_homepage'));
         }
 
-        // spotted_home_homepage
+        // spotted_user_home
         if (preg_match('#^/(?P<_locale>[^/]+)/?$#s', $pathinfo, $matches)) {
             if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'spotted_home_homepage');
+                return $this->redirect($pathinfo.'/', 'spotted_user_home');
             }
 
-            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Spotted\\HomeBundle\\Controller\\HomeController::indexAction',)), array('_route' => 'spotted_home_homepage'));
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Spotted\\UserBundle\\Controller\\HomeController::indexAction',)), array('_route' => 'spotted_user_home'));
         }
 
         // fos_user_security_login

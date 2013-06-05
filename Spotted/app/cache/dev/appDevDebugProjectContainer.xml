@@ -21,7 +21,6 @@
       <parameter key="JMSSecurityExtraBundle">JMS\SecurityExtraBundle\JMSSecurityExtraBundle</parameter>
       <parameter key="SpottedUserBundle">Spotted\UserBundle\SpottedUserBundle</parameter>
       <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
-      <parameter key="SpottedHomeBundle">Spotted\HomeBundle\SpottedHomeBundle</parameter>
       <parameter key="SpottedRequestListenerBundle">Spotted\RequestListenerBundle\SpottedRequestListenerBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -376,7 +375,6 @@
       <parameter>JMSSecurityExtraBundle</parameter>
       <parameter>SpottedUserBundle</parameter>
       <parameter>FOSUserBundle</parameter>
-      <parameter>SpottedHomeBundle</parameter>
       <parameter>SpottedRequestListenerBundle</parameter>
       <parameter>WebProfilerBundle</parameter>
       <parameter>SensioDistributionBundle</parameter>
@@ -500,8 +498,8 @@
     <parameter key="jms_di_extra.directories" type="collection"/>
     <parameter key="jms_di_extra.cache_dir">C:/Users/Alexis/Documents/Spotted/gitRepo/spotted/Spotted/app/cache/dev/jms_diextra</parameter>
     <parameter key="jms_di_extra.doctrine_integration">true</parameter>
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">C:/Users/Alexis/Documents/Spotted/gitRepo/spotted/Spotted/app/cache/dev/jms_diextra/doctrine/EntityManager_51ae415615f12.php</parameter>
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager51ae415615f12_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">C:/Users/Alexis/Documents/Spotted/gitRepo/spotted/Spotted/app/cache/dev/jms_diextra/doctrine/EntityManager_51ae84099b27d.php</parameter>
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager51ae84099b27d_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
     <parameter key="security.secured_services" type="collection"/>
     <parameter key="security.access.method_interceptor.class">JMS\SecurityExtraBundle\Security\Authorization\Interception\MethodSecurityInterceptor</parameter>
     <parameter key="security.access.method_access_control" type="collection"/>
@@ -554,7 +552,7 @@
       <parameter key="webmaster@example.com">webmaster</parameter>
     </parameter>
     <parameter key="fos_user.registration.confirmation.enabled">false</parameter>
-    <parameter key="fos_user.registration.form.type">fos_user_registration</parameter>
+    <parameter key="fos_user.registration.form.type">userbundle_user_registration</parameter>
     <parameter key="fos_user.registration.form.name">fos_user_registration_form</parameter>
     <parameter key="fos_user.registration.form.validation_groups" type="collection">
       <parameter>Registration</parameter>
@@ -631,6 +629,10 @@
   <services>
     <service id="spotted.listener.request" class="Spotted\RequestListenerBundle\SpottedRequestListenerBundle">
       <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest"/>
+    </service>
+    <service id="spotted.registration.form.type" class="Spotted\UserBundleForm\RegistrationType">
+      <tag name="form.type" alias="userbundle_user_registration"/>
+      <argument>Spotted\UserBundle\Entity\User</argument>
     </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
@@ -1744,12 +1746,6 @@
       </call>
       <call method="addResource">
         <argument>xlf</argument>
-        <argument>C:\Users\Alexis\Documents\Spotted\gitRepo\spotted\Spotted\src\Spotted\HomeBundle/Resources/translations\messages.fr.xlf</argument>
-        <argument>fr</argument>
-        <argument>messages</argument>
-      </call>
-      <call method="addResource">
-        <argument>xlf</argument>
         <argument>C:\Users\Alexis\Documents\Spotted\gitRepo\spotted\Spotted\src\Spotted\RequestListenerBundle/Resources/translations\messages.fr.xlf</argument>
         <argument>fr</argument>
         <argument>messages</argument>
@@ -1934,6 +1930,7 @@
           <service class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension" public="false">
             <argument type="service" id="service_container"/>
             <argument type="collection">
+              <argument key="userbundle_user_registration">spotted.registration.form.type</argument>
               <argument key="field">form.type.field</argument>
               <argument key="form">form.type.form</argument>
               <argument key="birthday">form.type.birthday</argument>
@@ -2474,7 +2471,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>51ae4155caf80</argument>
+            <argument>51ae840959300</argument>
           </service>
         </argument>
       </argument>
@@ -2786,7 +2783,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-            <argument>51ae4155caf80</argument>
+            <argument>51ae840959300</argument>
             <argument type="service" id="monolog.logger.security"/>
           </service>
         </argument>
@@ -2955,7 +2952,6 @@
               <argument>JMSSecurityExtraBundle</argument>
               <argument>SpottedUserBundle</argument>
               <argument>FOSUserBundle</argument>
-              <argument>SpottedHomeBundle</argument>
               <argument>SpottedRequestListenerBundle</argument>
               <argument>WebProfilerBundle</argument>
               <argument>SensioDistributionBundle</argument>
@@ -3403,33 +3399,6 @@
               <argument type="service">
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
-                  <argument>SpottedHomeBundle</argument>
-                  <argument>C:/Users/Alexis/Documents/Spotted/gitRepo/spotted/Spotted/app/Resources/SpottedHomeBundle/views</argument>
-                  <argument>/\.[^.]+\.twig$/</argument>
-                </service>
-              </argument>
-              <argument type="service">
-                <service class="%assetic.directory_resource.class%" public="false">
-                  <argument type="service" id="templating.loader"/>
-                  <argument>SpottedHomeBundle</argument>
-                  <argument>C:\Users\Alexis\Documents\Spotted\gitRepo\spotted\Spotted\src\Spotted\HomeBundle/Resources/views</argument>
-                  <argument>/\.[^.]+\.twig$/</argument>
-                </service>
-              </argument>
-            </argument>
-          </service>
-        </argument>
-        <argument>twig</argument>
-      </call>
-      <call method="addResource">
-        <argument type="service">
-          <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource" public="false">
-            <tag name="assetic.templating.twig"/>
-            <tag name="assetic.formula_resource" loader="twig"/>
-            <argument type="collection">
-              <argument type="service">
-                <service class="%assetic.directory_resource.class%" public="false">
-                  <argument type="service" id="templating.loader"/>
                   <argument>SpottedRequestListenerBundle</argument>
                   <argument>C:/Users/Alexis/Documents/Spotted/gitRepo/spotted/Spotted/app/Resources/SpottedRequestListenerBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
@@ -3700,8 +3669,8 @@
     <service id="doctrine.orm.default_manager_configurator" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator">
       <argument type="collection"/>
     </service>
-    <service id="doctrine.orm.default_entity_manager" class="EntityManager51ae415615f12_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
-      <file>C:/Users/Alexis/Documents/Spotted/gitRepo/spotted/Spotted/app/cache/dev/jms_diextra/doctrine/EntityManager_51ae415615f12.php</file>
+    <service id="doctrine.orm.default_entity_manager" class="EntityManager51ae84099b27d_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
+      <file>C:/Users/Alexis/Documents/Spotted/gitRepo/spotted/Spotted/app/cache/dev/jms_diextra/doctrine/EntityManager_51ae84099b27d.php</file>
       <argument type="service">
         <service class="Doctrine\ORM\EntityManager" factory-method="create" public="false">
           <argument type="service" id="doctrine.dbal.default_connection"/>
@@ -4001,7 +3970,7 @@
     <service id="fos_user.registration.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
       <argument type="service" id="form.factory"/>
       <argument>fos_user_registration_form</argument>
-      <argument>fos_user_registration</argument>
+      <argument>userbundle_user_registration</argument>
       <argument type="collection">
         <argument>Registration</argument>
         <argument>Default</argument>

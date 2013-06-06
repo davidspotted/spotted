@@ -7,14 +7,14 @@
 
 	<div id="div-home-selector">
 		<div class="div-home-caption"><span>{{'home.body.login'|trans }}</span></div>
-		<div class="div-home-caption"><span>{{'home.body.signup'|trans }}</span></div>
+		<div class="div-home-caption"><span>{{'home.body.signup'|trans }}</span></div>		
 	</div>
-	<div id="div-login-form">
+	<div id="div-login-form" class="div-home-form">
 		{% render 'FOSUserBundle:Security:Login' %}
 		<div id="btnConnect" onclick="connect();"><span>{{ 'home.body.connect'|trans }}</span></div>
 	</div>
 	
-	<div id="div-signup-form">
+	<div id="div-signup-form" class="div-home-form">
 		{% render 'FOSUserBundle:Registration:Register' %}
 	</div>
 	

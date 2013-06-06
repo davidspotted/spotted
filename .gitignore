@@ -6,7 +6,6 @@
 .LSOverride
 Icon
 
-/Spotted/web/bundles/
 /Spotted/app/bootstrap*
 /Spotted/app/cache/*
 /Spotted/app/logs/*

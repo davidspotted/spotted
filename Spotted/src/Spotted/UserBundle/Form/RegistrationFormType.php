@@ -15,6 +15,7 @@ class RegistrationFormType extends BaseType
             'label' => 'Code visuel :'
         ));
  */
+        $builder->remove('username');
     }
  
     public function getName()

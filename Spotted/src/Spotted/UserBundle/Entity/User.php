@@ -27,6 +27,7 @@ class User extends BaseUser
      * @ORM\Column(name="captcha", type="string", length=255)
      * @Assert\MinLength(10)
      */
+/*
     protected $captcha;
     
     public function getCaptcha()
@@ -40,5 +41,5 @@ class User extends BaseUser
     
     	return $this;
     }
-
+*/
 }

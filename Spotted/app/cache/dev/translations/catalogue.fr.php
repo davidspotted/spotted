@@ -86,6 +86,7 @@ $catalogue = new MessageCatalogue('fr', array (
     'home.body.login' => 'Se connecter',
     'home.body.signup' => 'S\'enregistrer',
     'home.body.connect' => 'Connexion',
+    'home.body.register' => 'S\'enregister',
     'Symfony2 is great' => 'J\'aime Symfony2',
   ),
   'FOSUserBundle' => 
@@ -97,8 +98,8 @@ $catalogue = new MessageCatalogue('fr', array (
     'group.flash.updated' => 'Le groupe a été mis à jour',
     'group.flash.created' => 'Le groupe a été créé',
     'group.flash.deleted' => 'Le groupe a été supprimé',
-    'security.login.username' => 'Nom d\'utilisateur :',
-    'security.login.password' => 'Mot de passe :',
+    'security.login.username' => 'Nom d\'utilisateur',
+    'security.login.password' => 'Mot de passe',
     'security.login.remember_me' => 'Se souvenir de moi',
     'security.login.submit' => 'Connexion',
     'profile.show.username' => 'Nom d\'utilisateur',
@@ -234,6 +235,7 @@ $catalogueEn = new MessageCatalogue('en', array (
     'home.body.login' => 'Log In',
     'home.body.signup' => 'Sign Up',
     'home.body.connect' => 'Connect',
+    'home.body.register' => 'Register',
   ),
   'FOSUserBundle' => 
   array (
@@ -244,8 +246,8 @@ $catalogueEn = new MessageCatalogue('en', array (
     'group.flash.updated' => 'The group has been updated',
     'group.flash.created' => 'The group has been created',
     'group.flash.deleted' => 'The group has been deleted',
-    'security.login.username' => 'Username:',
-    'security.login.password' => 'Password:',
+    'security.login.username' => 'Username',
+    'security.login.password' => 'Password',
     'security.login.remember_me' => 'Remember me',
     'security.login.submit' => 'Login',
     'profile.show.username' => 'Username',

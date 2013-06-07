@@ -12,6 +12,7 @@ class __TwigTemplate_61941ad92546728610afbc33661f8cd2 extends Twig_Template
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'stylesheets' => array($this, 'block_stylesheets'),
+            'bodyAttributes' => array($this, 'block_bodyAttributes'),
             'body' => array($this, 'block_body'),
             'javascripts' => array($this, 'block_javascripts'),
         );
@@ -36,24 +37,25 @@ class __TwigTemplate_61941ad92546728610afbc33661f8cd2 extends Twig_Template
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 12
         echo "  </head>
- 
-  <body>  
+   <body";
+        // line 13
+        $this->displayBlock('bodyAttributes', $context, $blocks);
+        echo ">  
   
   <div id=\"mobileContainer\">
   
   ";
-        // line 18
+        // line 17
         $this->displayBlock('body', $context, $blocks);
-        // line 20
-        echo "  
+        // line 19
+        echo "   
+  </div>  
   
-  </div>
- 
   ";
-        // line 24
+        // line 22
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 28
-        echo " 
+        // line 26
+        echo "   
   </body>
 </html>";
     }
@@ -74,23 +76,28 @@ class __TwigTemplate_61941ad92546728610afbc33661f8cd2 extends Twig_Template
 \t";
     }
 
-    // line 18
+    // line 13
+    public function block_bodyAttributes($context, array $blocks = array())
+    {
+    }
+
+    // line 17
     public function block_body($context, array $blocks = array())
     {
-        // line 19
-        echo "  
+        // line 18
+        echo "  \t 
   ";
     }
 
-    // line 24
+    // line 22
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 25
-        echo "\t\t\t <script type=\"text/javascript\" src=\"";
+        // line 23
+        echo "\t <script type=\"text/javascript\" src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/spotteduser/js/mobile.js"), "html", null, true);
         echo "\"></script>
-\t\t\t <script type=\"text/javascript\" src=\"";
-        // line 26
+\t <script type=\"text/javascript\" src=\"";
+        // line 24
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jQuery.js"), "html", null, true);
         echo "\"></script>
   ";
@@ -103,6 +110,6 @@ class __TwigTemplate_61941ad92546728610afbc33661f8cd2 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  94 => 26,  89 => 25,  86 => 24,  81 => 19,  78 => 18,  71 => 10,  68 => 9,  62 => 7,  56 => 28,  54 => 24,  48 => 20,  46 => 18,  38 => 12,  36 => 9,  31 => 7,  23 => 1,);
+        return array (  101 => 24,  96 => 23,  93 => 22,  88 => 18,  85 => 17,  80 => 13,  70 => 9,  64 => 7,  58 => 26,  56 => 22,  49 => 17,  39 => 12,  37 => 9,  32 => 7,  24 => 1,  31 => 6,  28 => 5,  73 => 10,  71 => 21,  63 => 17,  61 => 16,  55 => 13,  51 => 19,  45 => 8,  42 => 13,  36 => 5,  30 => 3,);
     }
 }

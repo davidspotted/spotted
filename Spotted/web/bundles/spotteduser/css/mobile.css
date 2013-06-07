@@ -5,12 +5,39 @@ h1 {
 
 .div-home-caption {
     text-align: center;
+    display: inline-block;
 }
 
 .div-home-form {
 	border-style: solid;
 	border-width: 1px;
 	padding: 10px;
+}
+
+.box-wide-input {
+	width: 270px;
+	height: 25px;
+}
+
+
+.home-form {
+	font-size: 15pt;
+}
+
+.action-button {
+	border-style: dotted;
+	border-width: 1px;
+    display: block;
+    font-size: 15pt;
+    height: 40px;
+    margin: 10px auto 0;
+    width: 90px;
+}
+
+
+.home-form input{
+	width: 270px;
+	height: 25px;
 }
 
 #mobileContainer {
@@ -24,11 +51,19 @@ h1 {
 	height: 40px;
 }
 
-#div-login-form {
-	
+#div-login-form label{
+	display:block;
 }
 
-#div-signup-form {
-	
+#div-signup-form label{
+	display:block;
+}
+
+#div-login-form label{
+	display:block;
+}
+
+#div-signup-form input [type-text]{
+	display:block;
 }
 

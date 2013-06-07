@@ -2,7 +2,10 @@
  
 {% block title %}{{'home.header.title'|trans }}{% endblock %}
  
+{% block bodyAttributes %} onload="pageSetup();"{% endblock %}
+
 {% block body %}
+
 <h1>Spotted</h1>
 
 	<div id="div-home-selector">
@@ -11,11 +14,12 @@
 	</div>
 	<div id="div-login-form" class="div-home-form">
 		{% render 'FOSUserBundle:Security:Login' %}
-		<div id="btnConnect" onclick="connect();"><span>{{ 'home.body.connect'|trans }}</span></div>
+		<div class="action-button" onclick="connect();"><span>{{ 'home.body.connect'|trans }}</span></div>
 	</div>
 	
 	<div id="div-signup-form" class="div-home-form">
 		{% render 'FOSUserBundle:Registration:Register' %}
+		 <div class="action-button" onclick="register();"><span>{{ 'home.body.register'|trans }}</span></div>
 	</div>
 	
 {% endblock %}

@@ -10,21 +10,19 @@
 	  		<link rel="stylesheet" href="{{ asset('bundles/spotteduser/css/mobile.css') }}" type="text/css" /> 
 	{% endblock %}
   </head>
- 
-  <body>  
+   <body{% block bodyAttributes %}{% endblock %}>  
   
   <div id="mobileContainer">
   
   {% block body %}
+  	 
+  {% endblock %}   
+  </div>  
   
-  {% endblock %}  
-  
-  </div>
- 
   {% block javascripts %}
-			 <script type="text/javascript" src="{{ asset('bundles/spotteduser/js/mobile.js') }}"></script>
-			 <script type="text/javascript" src="{{ asset('js/jQuery.js') }}"></script>
+	 <script type="text/javascript" src="{{ asset('bundles/spotteduser/js/mobile.js') }}"></script>
+	 <script type="text/javascript" src="{{ asset('js/jQuery.js') }}"></script>
   {% endblock %}
- 
+   
   </body>
 </html>

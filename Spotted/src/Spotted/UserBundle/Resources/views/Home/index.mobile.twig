@@ -9,8 +9,8 @@
 <h1>Spotted</h1>
 
 	<div id="div-home-selector">
-		<div class="div-home-caption"><span>{{'home.body.login'|trans }}</span></div>
-		<div class="div-home-caption"><span>{{'home.body.signup'|trans }}</span></div>		
+		<div id="div-login-caption" class="div-home-caption" onclick="formToogle(this);"><span>{{'home.body.login'|trans }}</span></div>
+		<div id="div-register-caption" class="div-home-caption" onclick="formToogle(this);"><span>{{'home.body.signup'|trans }}</span></div>		
 	</div>
 	<div id="div-login-form" class="div-home-form">
 		{% render 'FOSUserBundle:Security:Login' %}

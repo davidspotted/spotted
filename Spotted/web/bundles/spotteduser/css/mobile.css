@@ -4,8 +4,10 @@ h1 {
 }
 
 .div-home-caption {
-    text-align: center;
+    border-style: dotted;
+    border-width: 1px;
     display: inline-block;
+    text-align: center;
 }
 
 .div-home-form {
@@ -32,6 +34,7 @@ h1 {
     height: 40px;
     margin: 10px auto 0;
     width: 90px;
+    text-align: center;
 }
 
 

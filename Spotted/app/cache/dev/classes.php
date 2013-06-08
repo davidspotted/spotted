@@ -10733,6 +10733,8 @@ interface ValueSupplierInterface
 }
  
 
+
+
 namespace Symfony\Bundle\AsseticBundle
 {
 
@@ -10762,7 +10764,8 @@ class DefaultValueSupplier implements ValueSupplierInterface
             'env'    => $this->container->getParameter('kernel.environment'),
         );
     }
-}}
+}
+}
  
 
 

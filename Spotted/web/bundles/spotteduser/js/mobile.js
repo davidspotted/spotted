@@ -8,7 +8,7 @@ function register(){
 
 function pageSetup(){
 	var containerWidth = $("#mobileContainer").width();
-	var captionWidth = (containerWidth - 8)/2;
+	var captionWidth = (containerWidth - 9)/2;
 	$(".div-home-caption").css("width", captionWidth);
 	
 	$("#div-signup-form").hide();

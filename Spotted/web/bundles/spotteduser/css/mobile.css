@@ -70,3 +70,13 @@ h1 {
 	display:block;
 }
 
+#fos_user_registration_form_gender input{
+	display: inline;
+    width: 50px !important;
+}
+
+#fos_user_registration_form_gender label{
+	display: inline;
+    width: 50px !important;
+}
+

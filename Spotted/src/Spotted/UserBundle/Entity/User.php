@@ -24,6 +24,68 @@ class User extends BaseUser
     /**
      * @var string
      *
+     * @ORM\Column(name="firstname", type="string")
+     * @Assert\NotBlank()
+     */
+ 	protected $firstname;
+ 	
+ 	/**
+ 	 * @var string
+ 	 *
+ 	 * @ORM\Column(name="lastname", type="string")
+ 	 * @Assert\NotBlank()
+ 	 */
+ 	protected $lastname;
+ 	
+ 	/**
+ 	 * @var boolean
+ 	 *
+ 	 * @ORM\Column(name="gender", type="boolean")
+ 	 * @Assert\NotBlank()
+ 	 */
+ 	protected $gender;
+ 	
+ 	//protected $captcha;
+ 	
+ 	public function getFirstName()
+ 	{
+ 		return $this->firstname;
+ 	}
+ 	
+ 	public function setFirstName($firstname)
+ 	{
+ 		$this->firstname = $firstname;
+ 	
+ 		return $this;
+ 	}
+ 	
+ 	public function getGender()
+ 	{
+ 		return $this->gender;
+ 	}
+ 	
+ 	public function setGender($gender)
+ 	{
+ 		$this->gender = $gender;
+ 	
+ 		return $this;
+ 	}
+ 	
+ 	public function getLastName()
+ 	{
+ 		return $this->lastname;
+ 	}
+ 	
+ 	public function setLastName($lastname)
+ 	{
+ 		$this->lastname = $lastname;
+ 	
+ 		return $this;
+ 	}
+    
+    /**
+     * @var string
+     *
      * @ORM\Column(name="captcha", type="string", length=255)
      * @Assert\MinLength(10)
      */

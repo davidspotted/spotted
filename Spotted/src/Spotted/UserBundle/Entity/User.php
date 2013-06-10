@@ -21,6 +21,8 @@ class User extends BaseUser
      */
     protected $id;
     
+
+    
     /**
      * @var string
      *
@@ -38,14 +40,12 @@ class User extends BaseUser
  	protected $lastname;
  	
  	/**
- 	 * @var boolean
+ 	 * @var string
  	 *
- 	 * @ORM\Column(name="gender", type="boolean")
+ 	 * @ORM\Column(name="gender", type="string", length=1)
  	 * @Assert\NotBlank()
  	 */
  	protected $gender;
- 	
- 	//protected $captcha;
  	
  	public function getFirstName()
  	{
@@ -82,26 +82,11 @@ class User extends BaseUser
  	
  		return $this;
  	}
+ 	
+ 	public function setEmail($email)
+ 	{
+ 		parent::setEmail($email);
+ 		$this->setUsername($email);
+ 	}
     
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="captcha", type="string", length=255)
-     * @Assert\MinLength(10)
-     */
-/*
-    protected $captcha;
-    
-    public function getCaptcha()
-    {
-    	return $this->captcha;
-    }
-    
-    public function setCaptcha($captcha)
-    {
-    	$this->captcha = $captcha;
-    
-    	return $this;
-    }
-*/
 }

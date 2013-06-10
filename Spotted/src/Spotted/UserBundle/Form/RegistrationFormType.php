@@ -30,7 +30,7 @@ class RegistrationFormType extends BaseType
         		'required' => true,
         		'expanded' => true,
         		'multiple' => false,
-        		'label'     => 'form.gender.sex',
+        		'label'    => 'form.gender.sex',
         		'translation_domain' => 'FOSUserBundle'
         ));
         

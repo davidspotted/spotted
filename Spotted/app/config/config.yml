@@ -60,6 +60,7 @@ fos_user:
     registration:
         form:
             type: userbundle_user_registration
+            #validation_groups: [SpottedRegistration]
     
 # Swiftmailer Configuration
 swiftmailer:

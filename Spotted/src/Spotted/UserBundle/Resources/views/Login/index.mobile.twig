@@ -1,0 +1,25 @@
+{% extends "SpottedUserBundle::mobile.layout.html.twig" %}
+ 
+{% block title %}{{'login.header.title'|trans }}{% endblock %}
+ 
+{% block bodyAttributes %} onload="pageSetup();"{% endblock %}
+
+{% block body %}
+
+<h1>Spotted</h1>
+
+	<div id="div-home-selector">
+		<div id="div-login-caption" class="div-home-caption" onclick="formToogle(this);"><span>{{'login.body.login'|trans }}</span></div>
+		<div id="div-register-caption" class="div-home-caption" onclick="formToogle(this);"><span>{{'login.body.signup'|trans }}</span></div>		
+	</div>
+	<div id="div-login-form" class="div-home-form">
+		{% render 'FOSUserBundle:Security:Login' %}
+		<div class="action-button" onclick="connect();"><span>{{ 'login.body.connect'|trans }}</span></div>
+	</div>
+	
+	<div id="div-signup-form" class="div-home-form">
+		{% render 'FOSUserBundle:Registration:Register' %}
+		 <div class="action-button" onclick="register();"><span>{{ 'login.body.register'|trans }}</span></div>
+	</div>
+	
+{% endblock %}

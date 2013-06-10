@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new Spotted\UserBundle\SpottedUserBundle(),
         	new FOS\UserBundle\FOSUserBundle(),
             new Spotted\RequestListenerBundle\SpottedRequestListenerBundle(),
+            new Spotted\SpotsBundle\SpottedSpotsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -33,25 +33,25 @@ class __TwigTemplate_52d298b8fd17987d8727cc303793e9c9 extends Twig_Template
             'password_widget' => array($this, 'block_password_widget'),
             'hidden_widget' => array($this, 'block_hidden_widget'),
             'email_widget' => array($this, 'block_email_widget'),
+            'button_widget' => array($this, 'block_button_widget'),
+            'submit_widget' => array($this, 'block_submit_widget'),
+            'reset_widget' => array($this, 'block_reset_widget'),
             'form_label' => array($this, 'block_form_label'),
+            'button_label' => array($this, 'block_button_label'),
             'repeated_row' => array($this, 'block_repeated_row'),
             'form_row' => array($this, 'block_form_row'),
+            'button_row' => array($this, 'block_button_row'),
             'hidden_row' => array($this, 'block_hidden_row'),
+            'form' => array($this, 'block_form'),
+            'form_start' => array($this, 'block_form_start'),
+            'form_end' => array($this, 'block_form_end'),
             'form_enctype' => array($this, 'block_form_enctype'),
             'form_errors' => array($this, 'block_form_errors'),
             'form_rest' => array($this, 'block_form_rest'),
             'form_rows' => array($this, 'block_form_rows'),
             'widget_attributes' => array($this, 'block_widget_attributes'),
             'widget_container_attributes' => array($this, 'block_widget_container_attributes'),
-            'generic_label' => array($this, 'block_generic_label'),
-            'widget_choice_options' => array($this, 'block_widget_choice_options'),
-            'field_widget' => array($this, 'block_field_widget'),
-            'field_label' => array($this, 'block_field_label'),
-            'field_row' => array($this, 'block_field_row'),
-            'field_enctype' => array($this, 'block_field_enctype'),
-            'field_errors' => array($this, 'block_field_errors'),
-            'field_rest' => array($this, 'block_field_rest'),
-            'field_rows' => array($this, 'block_field_rows'),
+            'button_attributes' => array($this, 'block_button_attributes'),
         );
     }
 
@@ -175,89 +175,110 @@ class __TwigTemplate_52d298b8fd17987d8727cc303793e9c9 extends Twig_Template
         // line 220
         echo "
 ";
-        // line 222
+        // line 221
+        $this->displayBlock('button_widget', $context, $blocks);
+        // line 229
         echo "
 ";
-        // line 223
-        $this->displayBlock('form_label', $context, $blocks);
+        // line 230
+        $this->displayBlock('submit_widget', $context, $blocks);
+        // line 236
+        echo "
+";
         // line 237
+        $this->displayBlock('reset_widget', $context, $blocks);
+        // line 243
         echo "
 ";
-        // line 239
+        // line 245
         echo "
 ";
-        // line 240
-        $this->displayBlock('repeated_row', $context, $blocks);
-        // line 249
+        // line 246
+        $this->displayBlock('form_label', $context, $blocks);
+        // line 262
         echo "
 ";
-        // line 250
-        $this->displayBlock('form_row', $context, $blocks);
-        // line 259
-        echo "
-";
-        // line 260
-        $this->displayBlock('hidden_row', $context, $blocks);
         // line 263
-        echo "
-";
-        // line 265
+        $this->displayBlock('button_label', $context, $blocks);
+        // line 264
         echo "
 ";
         // line 266
-        $this->displayBlock('form_enctype', $context, $blocks);
-        // line 271
         echo "
 ";
-        // line 272
-        $this->displayBlock('form_errors', $context, $blocks);
+        // line 267
+        $this->displayBlock('repeated_row', $context, $blocks);
+        // line 276
+        echo "
+";
+        // line 277
+        $this->displayBlock('form_row', $context, $blocks);
+        // line 286
+        echo "
+";
         // line 287
+        $this->displayBlock('button_row', $context, $blocks);
+        // line 294
         echo "
 ";
-        // line 288
-        $this->displayBlock('form_rest', $context, $blocks);
-        // line 297
-        echo "
-";
-        // line 299
+        // line 295
+        $this->displayBlock('hidden_row', $context, $blocks);
+        // line 298
         echo "
 ";
         // line 300
-        $this->displayBlock('form_rows', $context, $blocks);
-        // line 307
         echo "
 ";
+        // line 301
+        $this->displayBlock('form', $context, $blocks);
         // line 308
-        $this->displayBlock('widget_attributes', $context, $blocks);
-        // line 314
         echo "
 ";
-        // line 315
-        $this->displayBlock('widget_container_attributes', $context, $blocks);
-        // line 321
-        echo "
-";
+        // line 309
+        $this->displayBlock('form_start', $context, $blocks);
         // line 323
         echo "
 ";
         // line 324
-        $this->displayBlock('generic_label', $context, $blocks);
-        // line 325
-        $this->displayBlock('widget_choice_options', $context, $blocks);
-        // line 326
-        $this->displayBlock('field_widget', $context, $blocks);
-        // line 327
-        $this->displayBlock('field_label', $context, $blocks);
-        // line 328
-        $this->displayBlock('field_row', $context, $blocks);
-        // line 329
-        $this->displayBlock('field_enctype', $context, $blocks);
-        // line 330
-        $this->displayBlock('field_errors', $context, $blocks);
-        // line 331
-        $this->displayBlock('field_rest', $context, $blocks);
+        $this->displayBlock('form_end', $context, $blocks);
         // line 332
-        $this->displayBlock('field_rows', $context, $blocks);
+        echo "
+";
+        // line 333
+        $this->displayBlock('form_enctype', $context, $blocks);
+        // line 338
+        echo "
+";
+        // line 339
+        $this->displayBlock('form_errors', $context, $blocks);
+        // line 350
+        echo "
+";
+        // line 351
+        $this->displayBlock('form_rest', $context, $blocks);
+        // line 360
+        echo "
+";
+        // line 362
+        echo "
+";
+        // line 363
+        $this->displayBlock('form_rows', $context, $blocks);
+        // line 370
+        echo "
+";
+        // line 371
+        $this->displayBlock('widget_attributes', $context, $blocks);
+        // line 377
+        echo "
+";
+        // line 378
+        $this->displayBlock('widget_container_attributes', $context, $blocks);
+        // line 384
+        echo "
+";
+        // line 385
+        $this->displayBlock('button_attributes', $context, $blocks);
     }
 
     // line 3
@@ -447,7 +468,16 @@ class __TwigTemplate_52d298b8fd17987d8727cc303793e9c9 extends Twig_Template
         // line 71
         if ((!(null === $this->getContext($context, "empty_value")))) {
             // line 72
-            echo "            <option value=\"\">";
+            echo "            <option ";
+            if ($this->getContext($context, "required")) {
+                echo " disabled=\"disabled\"";
+                if (twig_test_empty($this->getContext($context, "value"))) {
+                    echo " selected=\"selected\"";
+                }
+            } else {
+                echo " value=\"\"";
+            }
+            echo ">";
             echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans($this->getContext($context, "empty_value"), array(), $this->getContext($context, "translation_domain")), "html", null, true);
             echo "</option>
         ";
@@ -693,8 +723,10 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
             ";
             // line 152
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "hour"), 'widget', $this->getContext($context, "vars"));
-            echo ":";
-            echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "minute"), 'widget', $this->getContext($context, "vars"));
+            if ($this->getContext($context, "with_minutes")) {
+                echo ":";
+                echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "minute"), 'widget', $this->getContext($context, "vars"));
+            }
             if ($this->getContext($context, "with_seconds")) {
                 echo ":";
                 echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "second"), 'widget', $this->getContext($context, "vars"));
@@ -849,42 +881,243 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
-    // line 223
-    public function block_form_label($context, array $blocks = array())
+    // line 221
+    public function block_button_widget($context, array $blocks = array())
     {
-        // line 224
+        // line 222
         ob_start();
-        // line 225
-        echo "    ";
-        if ((!$this->getContext($context, "compound"))) {
-            // line 226
-            echo "        ";
-            $context["label_attr"] = twig_array_merge($this->getContext($context, "label_attr"), array("for" => $this->getContext($context, "id")));
-            // line 227
-            echo "    ";
-        }
-        // line 228
-        echo "    ";
-        if ($this->getContext($context, "required")) {
-            // line 229
-            echo "        ";
-            $context["label_attr"] = twig_array_merge($this->getContext($context, "label_attr"), array("class" => trim(((($this->getAttribute($this->getContext($context, "label_attr", true), "class", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute($this->getContext($context, "label_attr", true), "class"), "")) : ("")) . " required"))));
-            // line 230
-            echo "    ";
-        }
-        // line 231
+        // line 223
         echo "    ";
         if (twig_test_empty($this->getContext($context, "label"))) {
-            // line 232
+            // line 224
             echo "        ";
             $context["label"] = $this->env->getExtension('form')->renderer->humanize($this->getContext($context, "name"));
-            // line 233
+            // line 225
             echo "    ";
         }
-        // line 234
-        echo "    <label";
+        // line 226
+        echo "    <button type=\"";
+        echo twig_escape_filter($this->env, ((array_key_exists("type", $context)) ? (_twig_default_filter($this->getContext($context, "type"), "button")) : ("button")), "html", null, true);
+        echo "\" ";
+        $this->displayBlock("button_attributes", $context, $blocks);
+        echo ">";
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans($this->getContext($context, "label"), array(), $this->getContext($context, "translation_domain")), "html", null, true);
+        echo "</button>
+";
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+    }
+
+    // line 230
+    public function block_submit_widget($context, array $blocks = array())
+    {
+        // line 231
+        ob_start();
+        // line 232
+        echo "    ";
+        $context["type"] = ((array_key_exists("type", $context)) ? (_twig_default_filter($this->getContext($context, "type"), "submit")) : ("submit"));
+        // line 233
+        echo "    ";
+        $this->displayBlock("button_widget", $context, $blocks);
+        echo "
+";
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+    }
+
+    // line 237
+    public function block_reset_widget($context, array $blocks = array())
+    {
+        // line 238
+        ob_start();
+        // line 239
+        echo "    ";
+        $context["type"] = ((array_key_exists("type", $context)) ? (_twig_default_filter($this->getContext($context, "type"), "reset")) : ("reset"));
+        // line 240
+        echo "    ";
+        $this->displayBlock("button_widget", $context, $blocks);
+        echo "
+";
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+    }
+
+    // line 246
+    public function block_form_label($context, array $blocks = array())
+    {
+        // line 247
+        ob_start();
+        // line 248
+        echo "    ";
+        if ((!($this->getContext($context, "label") === false))) {
+            // line 249
+            echo "        ";
+            if ((!$this->getContext($context, "compound"))) {
+                // line 250
+                echo "            ";
+                $context["label_attr"] = twig_array_merge($this->getContext($context, "label_attr"), array("for" => $this->getContext($context, "id")));
+                // line 251
+                echo "        ";
+            }
+            // line 252
+            echo "        ";
+            if ($this->getContext($context, "required")) {
+                // line 253
+                echo "            ";
+                $context["label_attr"] = twig_array_merge($this->getContext($context, "label_attr"), array("class" => trim(((($this->getAttribute($this->getContext($context, "label_attr", true), "class", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute($this->getContext($context, "label_attr", true), "class"), "")) : ("")) . " required"))));
+                // line 254
+                echo "        ";
+            }
+            // line 255
+            echo "        ";
+            if (twig_test_empty($this->getContext($context, "label"))) {
+                // line 256
+                echo "            ";
+                $context["label"] = $this->env->getExtension('form')->renderer->humanize($this->getContext($context, "name"));
+                // line 257
+                echo "        ";
+            }
+            // line 258
+            echo "        <label";
+            $context['_parent'] = (array) $context;
+            $context['_seq'] = twig_ensure_traversable($this->getContext($context, "label_attr"));
+            foreach ($context['_seq'] as $context["attrname"] => $context["attrvalue"]) {
+                echo " ";
+                echo twig_escape_filter($this->env, $this->getContext($context, "attrname"), "html", null, true);
+                echo "=\"";
+                echo twig_escape_filter($this->env, $this->getContext($context, "attrvalue"), "html", null, true);
+                echo "\"";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['attrname'], $context['attrvalue'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            echo ">";
+            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans($this->getContext($context, "label"), array(), $this->getContext($context, "translation_domain")), "html", null, true);
+            echo "</label>
+    ";
+        }
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+    }
+
+    // line 263
+    public function block_button_label($context, array $blocks = array())
+    {
+    }
+
+    // line 267
+    public function block_repeated_row($context, array $blocks = array())
+    {
+        // line 268
+        ob_start();
+        // line 269
+        echo "    ";
+        // line 273
+        echo "    ";
+        $this->displayBlock("form_rows", $context, $blocks);
+        echo "
+";
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+    }
+
+    // line 277
+    public function block_form_row($context, array $blocks = array())
+    {
+        // line 278
+        ob_start();
+        // line 279
+        echo "    <div>
+        ";
+        // line 280
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'label');
+        echo "
+        ";
+        // line 281
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'errors');
+        echo "
+        ";
+        // line 282
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'widget');
+        echo "
+    </div>
+";
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+    }
+
+    // line 287
+    public function block_button_row($context, array $blocks = array())
+    {
+        // line 288
+        ob_start();
+        // line 289
+        echo "    <div>
+        ";
+        // line 290
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'widget');
+        echo "
+    </div>
+";
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+    }
+
+    // line 295
+    public function block_hidden_row($context, array $blocks = array())
+    {
+        // line 296
+        echo "    ";
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'widget');
+        echo "
+";
+    }
+
+    // line 301
+    public function block_form($context, array $blocks = array())
+    {
+        // line 302
+        ob_start();
+        // line 303
+        echo "    ";
+        echo         $this->env->getExtension('form')->renderer->renderBlock($this->getContext($context, "form"), 'form_start');
+        echo "
+        ";
+        // line 304
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'widget');
+        echo "
+    ";
+        // line 305
+        echo         $this->env->getExtension('form')->renderer->renderBlock($this->getContext($context, "form"), 'form_end');
+        echo "
+";
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+    }
+
+    // line 309
+    public function block_form_start($context, array $blocks = array())
+    {
+        // line 310
+        ob_start();
+        // line 311
+        echo "    ";
+        $context["method"] = twig_upper_filter($this->env, $this->getContext($context, "method"));
+        // line 312
+        echo "    ";
+        if (twig_in_filter($this->getContext($context, "method"), array(0 => "GET", 1 => "POST"))) {
+            // line 313
+            echo "        ";
+            $context["form_method"] = $this->getContext($context, "method");
+            // line 314
+            echo "    ";
+        } else {
+            // line 315
+            echo "        ";
+            $context["form_method"] = "POST";
+            // line 316
+            echo "    ";
+        }
+        // line 317
+        echo "    <form method=\"";
+        echo twig_escape_filter($this->env, twig_lower_filter($this->env, $this->getContext($context, "form_method")), "html", null, true);
+        echo "\" action=\"";
+        echo twig_escape_filter($this->env, $this->getContext($context, "action"), "html", null, true);
+        echo "\"";
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable($this->getContext($context, "label_attr"));
+        $context['_seq'] = twig_ensure_traversable($this->getContext($context, "attr"));
         foreach ($context['_seq'] as $context["attrname"] => $context["attrvalue"]) {
             echo " ";
             echo twig_escape_filter($this->env, $this->getContext($context, "attrname"), "html", null, true);
@@ -895,68 +1128,48 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['attrname'], $context['attrvalue'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        echo ">";
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans($this->getContext($context, "label"), array(), $this->getContext($context, "translation_domain")), "html", null, true);
-        echo "</label>
-";
+        if ($this->getContext($context, "multipart")) {
+            echo " enctype=\"multipart/form-data\"";
+        }
+        echo ">
+    ";
+        // line 318
+        if (($this->getContext($context, "form_method") != $this->getContext($context, "method"))) {
+            // line 319
+            echo "        <input type=\"hidden\" name=\"_method\" value=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "method"), "html", null, true);
+            echo "\" />
+    ";
+        }
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
-    // line 240
-    public function block_repeated_row($context, array $blocks = array())
+    // line 324
+    public function block_form_end($context, array $blocks = array())
     {
-        // line 241
+        // line 325
         ob_start();
-        // line 242
+        // line 326
         echo "    ";
-        // line 246
-        echo "    ";
-        $this->displayBlock("form_rows", $context, $blocks);
-        echo "
+        if (((!array_key_exists("render_rest", $context)) || $this->getContext($context, "render_rest"))) {
+            // line 327
+            echo "        ";
+            echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'rest');
+            echo "
+    ";
+        }
+        // line 329
+        echo "    </form>
 ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
-    // line 250
-    public function block_form_row($context, array $blocks = array())
-    {
-        // line 251
-        ob_start();
-        // line 252
-        echo "    <div>
-        ";
-        // line 253
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'label');
-        echo "
-        ";
-        // line 254
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'errors');
-        echo "
-        ";
-        // line 255
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'widget');
-        echo "
-    </div>
-";
-        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
-    }
-
-    // line 260
-    public function block_hidden_row($context, array $blocks = array())
-    {
-        // line 261
-        echo "    ";
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'widget');
-        echo "
-";
-    }
-
-    // line 266
+    // line 333
     public function block_form_enctype($context, array $blocks = array())
     {
-        // line 267
+        // line 334
         ob_start();
-        // line 268
+        // line 335
         echo "    ";
         if ($this->getContext($context, "multipart")) {
             echo "enctype=\"multipart/form-data\"";
@@ -964,58 +1177,57 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
-    // line 272
+    // line 339
     public function block_form_errors($context, array $blocks = array())
     {
-        // line 273
+        // line 340
         ob_start();
-        // line 274
+        // line 341
         echo "    ";
         if ((twig_length_filter($this->env, $this->getContext($context, "errors")) > 0)) {
-            // line 275
+            // line 342
             echo "    <ul>
         ";
-            // line 276
+            // line 343
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable($this->getContext($context, "errors"));
             foreach ($context['_seq'] as $context["_key"] => $context["error"]) {
-                // line 277
+                // line 344
                 echo "            <li>";
-                echo twig_escape_filter($this->env, (((null === $this->getAttribute($this->getContext($context, "error"), "messagePluralization"))) ? ($this->env->getExtension('translator')->trans($this->getAttribute($this->getContext($context, "error"), "messageTemplate"), $this->getAttribute($this->getContext($context, "error"), "messageParameters"), "validators")) : ($this->env->getExtension('translator')->transchoice($this->getAttribute($this->getContext($context, "error"), "messageTemplate"), $this->getAttribute($this->getContext($context, "error"), "messagePluralization"), $this->getAttribute($this->getContext($context, "error"), "messageParameters"), "validators"))), "html", null, true);
-                // line 281
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getContext($context, "error"), "message"), "html", null, true);
                 echo "</li>
         ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['error'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 283
+            // line 346
             echo "    </ul>
     ";
         }
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
-    // line 288
+    // line 351
     public function block_form_rest($context, array $blocks = array())
     {
-        // line 289
+        // line 352
         ob_start();
-        // line 290
+        // line 353
         echo "    ";
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable($this->getContext($context, "form"));
         foreach ($context['_seq'] as $context["_key"] => $context["child"]) {
-            // line 291
+            // line 354
             echo "        ";
             if ((!$this->getAttribute($this->getContext($context, "child"), "rendered"))) {
-                // line 292
+                // line 355
                 echo "            ";
                 echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "child"), 'row');
                 echo "
         ";
             }
-            // line 294
+            // line 357
             echo "    ";
         }
         $_parent = $context['_parent'];
@@ -1024,17 +1236,17 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
-    // line 300
+    // line 363
     public function block_form_rows($context, array $blocks = array())
     {
-        // line 301
+        // line 364
         ob_start();
-        // line 302
+        // line 365
         echo "    ";
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable($this->getContext($context, "form"));
         foreach ($context['_seq'] as $context["_key"] => $context["child"]) {
-            // line 303
+            // line 366
             echo "        ";
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "child"), 'row');
             echo "
@@ -1046,12 +1258,12 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
-    // line 308
+    // line 371
     public function block_widget_attributes($context, array $blocks = array())
     {
-        // line 309
+        // line 372
         ob_start();
-        // line 310
+        // line 373
         echo "    id=\"";
         echo twig_escape_filter($this->env, $this->getContext($context, "id"), "html", null, true);
         echo "\" name=\"";
@@ -1076,7 +1288,7 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
             echo twig_escape_filter($this->env, $this->getContext($context, "pattern"), "html", null, true);
             echo "\"";
         }
-        // line 311
+        // line 374
         echo "    ";
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable($this->getContext($context, "attr"));
@@ -1099,19 +1311,19 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
-    // line 315
+    // line 378
     public function block_widget_container_attributes($context, array $blocks = array())
     {
-        // line 316
+        // line 379
         ob_start();
-        // line 317
+        // line 380
         echo "    ";
         if ((!twig_test_empty($this->getContext($context, "id")))) {
             echo "id=\"";
             echo twig_escape_filter($this->env, $this->getContext($context, "id"), "html", null, true);
             echo "\" ";
         }
-        // line 318
+        // line 381
         echo "    ";
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable($this->getContext($context, "attr"));
@@ -1127,58 +1339,34 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
-    // line 324
-    public function block_generic_label($context, array $blocks = array())
+    // line 385
+    public function block_button_attributes($context, array $blocks = array())
     {
-        $this->displayBlock("form_label", $context, $blocks);
-    }
-
-    // line 325
-    public function block_widget_choice_options($context, array $blocks = array())
-    {
-        $this->displayBlock("choice_widget_options", $context, $blocks);
-    }
-
-    // line 326
-    public function block_field_widget($context, array $blocks = array())
-    {
-        $this->displayBlock("form_widget_simple", $context, $blocks);
-    }
-
-    // line 327
-    public function block_field_label($context, array $blocks = array())
-    {
-        $this->displayBlock("form_label", $context, $blocks);
-    }
-
-    // line 328
-    public function block_field_row($context, array $blocks = array())
-    {
-        $this->displayBlock("form_row", $context, $blocks);
-    }
-
-    // line 329
-    public function block_field_enctype($context, array $blocks = array())
-    {
-        $this->displayBlock("form_enctype", $context, $blocks);
-    }
-
-    // line 330
-    public function block_field_errors($context, array $blocks = array())
-    {
-        $this->displayBlock("form_errors", $context, $blocks);
-    }
-
-    // line 331
-    public function block_field_rest($context, array $blocks = array())
-    {
-        $this->displayBlock("form_rest", $context, $blocks);
-    }
-
-    // line 332
-    public function block_field_rows($context, array $blocks = array())
-    {
-        $this->displayBlock("form_rows", $context, $blocks);
+        // line 386
+        ob_start();
+        // line 387
+        echo "    id=\"";
+        echo twig_escape_filter($this->env, $this->getContext($context, "id"), "html", null, true);
+        echo "\" name=\"";
+        echo twig_escape_filter($this->env, $this->getContext($context, "full_name"), "html", null, true);
+        echo "\"";
+        if ($this->getContext($context, "disabled")) {
+            echo " disabled=\"disabled\"";
+        }
+        // line 388
+        echo "    ";
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable($this->getContext($context, "attr"));
+        foreach ($context['_seq'] as $context["attrname"] => $context["attrvalue"]) {
+            echo twig_escape_filter($this->env, $this->getContext($context, "attrname"), "html", null, true);
+            echo "=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "attrvalue"), "html", null, true);
+            echo "\" ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['attrname'], $context['attrvalue'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
     public function getTemplateName()
@@ -1188,6 +1376,6 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
 
     public function getDebugInfo()
     {
-        return array (  1179 => 332,  1173 => 331,  1167 => 330,  1161 => 329,  1155 => 328,  1149 => 327,  1143 => 326,  1137 => 325,  1131 => 324,  1115 => 318,  1108 => 317,  1106 => 316,  1103 => 315,  1080 => 311,  1055 => 310,  1053 => 309,  1050 => 308,  1038 => 303,  1033 => 302,  1031 => 301,  1028 => 300,  1019 => 294,  1013 => 292,  1010 => 291,  1005 => 290,  1003 => 289,  1000 => 288,  993 => 283,  986 => 281,  983 => 277,  979 => 276,  976 => 275,  973 => 274,  971 => 273,  968 => 272,  960 => 268,  958 => 267,  955 => 266,  948 => 261,  945 => 260,  937 => 255,  933 => 254,  929 => 253,  926 => 252,  924 => 251,  921 => 250,  913 => 246,  911 => 242,  909 => 241,  906 => 240,  885 => 234,  882 => 233,  879 => 232,  876 => 231,  873 => 230,  870 => 229,  867 => 228,  864 => 227,  861 => 226,  858 => 225,  856 => 224,  853 => 223,  845 => 217,  842 => 216,  840 => 215,  837 => 214,  829 => 210,  826 => 209,  824 => 208,  821 => 207,  813 => 203,  810 => 202,  808 => 201,  805 => 200,  797 => 196,  794 => 195,  792 => 194,  789 => 193,  781 => 189,  778 => 188,  773 => 186,  765 => 182,  762 => 181,  760 => 180,  757 => 179,  749 => 175,  747 => 174,  744 => 173,  736 => 169,  733 => 168,  731 => 167,  728 => 166,  720 => 162,  717 => 161,  715 => 160,  713 => 159,  710 => 158,  703 => 153,  695 => 152,  687 => 150,  681 => 148,  676 => 146,  673 => 145,  665 => 139,  662 => 137,  660 => 135,  655 => 134,  649 => 132,  646 => 131,  641 => 129,  632 => 123,  628 => 122,  624 => 121,  620 => 120,  615 => 119,  601 => 114,  585 => 110,  583 => 109,  580 => 108,  564 => 104,  562 => 103,  559 => 102,  542 => 98,  530 => 96,  521 => 92,  516 => 91,  495 => 89,  493 => 88,  490 => 87,  481 => 82,  478 => 81,  475 => 80,  469 => 78,  467 => 77,  462 => 76,  459 => 75,  456 => 74,  450 => 72,  448 => 71,  440 => 70,  438 => 69,  435 => 68,  429 => 64,  421 => 62,  416 => 61,  412 => 60,  407 => 59,  405 => 58,  402 => 57,  393 => 52,  387 => 50,  384 => 49,  382 => 48,  369 => 43,  367 => 42,  364 => 41,  353 => 36,  350 => 35,  345 => 33,  334 => 27,  329 => 26,  321 => 23,  290 => 14,  278 => 8,  272 => 6,  269 => 5,  267 => 4,  256 => 330,  250 => 327,  248 => 326,  246 => 325,  244 => 324,  241 => 323,  236 => 315,  233 => 314,  223 => 299,  218 => 288,  213 => 272,  210 => 271,  208 => 266,  200 => 260,  197 => 259,  195 => 250,  187 => 239,  179 => 222,  146 => 178,  129 => 145,  124 => 129,  99 => 68,  262 => 236,  260 => 332,  257 => 234,  40 => 11,  790 => 469,  787 => 468,  776 => 187,  772 => 465,  768 => 463,  755 => 462,  729 => 457,  726 => 456,  707 => 454,  690 => 151,  686 => 451,  682 => 450,  678 => 147,  674 => 448,  670 => 447,  666 => 446,  663 => 138,  661 => 136,  644 => 130,  633 => 442,  618 => 437,  613 => 435,  609 => 117,  606 => 116,  604 => 115,  590 => 431,  558 => 401,  540 => 398,  523 => 93,  520 => 396,  518 => 395,  513 => 90,  508 => 391,  181 => 87,  173 => 85,  166 => 206,  161 => 199,  156 => 192,  150 => 75,  388 => 160,  385 => 159,  379 => 47,  377 => 157,  370 => 156,  366 => 155,  362 => 153,  360 => 152,  357 => 151,  354 => 150,  352 => 149,  344 => 147,  342 => 32,  339 => 145,  330 => 140,  327 => 139,  320 => 135,  314 => 21,  311 => 20,  308 => 129,  306 => 128,  280 => 114,  275 => 111,  264 => 3,  258 => 331,  254 => 329,  247 => 97,  240 => 219,  234 => 89,  231 => 308,  226 => 300,  221 => 83,  207 => 95,  202 => 263,  193 => 68,  190 => 240,  169 => 207,  107 => 37,  209 => 77,  176 => 220,  170 => 60,  90 => 27,  77 => 25,  188 => 66,  174 => 214,  167 => 64,  164 => 200,  134 => 158,  87 => 26,  356 => 37,  347 => 34,  343 => 159,  340 => 158,  335 => 157,  333 => 141,  325 => 138,  323 => 24,  316 => 22,  309 => 141,  302 => 137,  288 => 129,  281 => 125,  274 => 121,  259 => 109,  252 => 328,  238 => 321,  228 => 307,  217 => 83,  214 => 82,  206 => 78,  203 => 77,  192 => 249,  182 => 223,  158 => 56,  148 => 74,  140 => 42,  128 => 45,  125 => 44,  113 => 40,  110 => 38,  69 => 13,  97 => 23,  86 => 46,  62 => 14,  20 => 1,  49 => 15,  23 => 3,  56 => 12,  53 => 17,  301 => 125,  295 => 16,  292 => 15,  289 => 119,  287 => 13,  282 => 115,  276 => 248,  273 => 110,  270 => 84,  268 => 107,  263 => 80,  249 => 79,  245 => 96,  230 => 75,  222 => 73,  220 => 297,  215 => 287,  211 => 81,  204 => 94,  198 => 69,  185 => 68,  183 => 63,  177 => 59,  160 => 59,  112 => 39,  82 => 26,  65 => 17,  38 => 5,  144 => 173,  141 => 172,  135 => 47,  126 => 144,  109 => 102,  103 => 25,  67 => 16,  61 => 2,  47 => 9,  105 => 24,  93 => 28,  76 => 31,  72 => 18,  68 => 30,  27 => 5,  91 => 56,  84 => 41,  94 => 57,  88 => 30,  79 => 32,  59 => 13,  21 => 1,  44 => 11,  31 => 6,  28 => 3,  225 => 88,  216 => 90,  212 => 78,  205 => 265,  201 => 83,  196 => 92,  194 => 62,  191 => 70,  189 => 77,  186 => 76,  180 => 72,  172 => 64,  159 => 193,  154 => 186,  147 => 58,  132 => 47,  127 => 52,  121 => 128,  118 => 44,  114 => 108,  104 => 87,  100 => 36,  78 => 24,  75 => 24,  71 => 19,  58 => 14,  34 => 5,  26 => 3,  25 => 3,  24 => 2,  19 => 1,  70 => 13,  63 => 16,  46 => 14,  22 => 2,  163 => 81,  155 => 58,  152 => 49,  149 => 179,  145 => 57,  139 => 166,  131 => 157,  123 => 35,  120 => 50,  115 => 40,  106 => 101,  101 => 86,  96 => 67,  83 => 28,  80 => 32,  74 => 20,  66 => 12,  55 => 13,  52 => 18,  50 => 16,  43 => 7,  41 => 7,  37 => 7,  35 => 4,  32 => 6,  29 => 3,  184 => 237,  178 => 86,  171 => 213,  165 => 54,  162 => 53,  157 => 56,  153 => 62,  151 => 185,  143 => 43,  138 => 55,  136 => 165,  133 => 43,  130 => 39,  122 => 51,  119 => 114,  116 => 113,  111 => 107,  108 => 33,  102 => 30,  98 => 29,  95 => 34,  92 => 31,  89 => 47,  85 => 17,  81 => 40,  73 => 23,  64 => 3,  60 => 20,  57 => 14,  54 => 17,  51 => 11,  48 => 11,  45 => 8,  42 => 8,  39 => 9,  36 => 5,  33 => 4,  30 => 3,);
+        return array (  1357 => 388,  1348 => 387,  1346 => 386,  1343 => 385,  1327 => 381,  1320 => 380,  1318 => 379,  1315 => 378,  1292 => 374,  1267 => 373,  1265 => 372,  1262 => 371,  1250 => 366,  1245 => 365,  1243 => 364,  1240 => 363,  1231 => 357,  1225 => 355,  1222 => 354,  1217 => 353,  1215 => 352,  1212 => 351,  1205 => 346,  1196 => 344,  1192 => 343,  1189 => 342,  1186 => 341,  1184 => 340,  1181 => 339,  1173 => 335,  1171 => 334,  1168 => 333,  1162 => 329,  1156 => 327,  1153 => 326,  1151 => 325,  1148 => 324,  1139 => 319,  1137 => 318,  1114 => 317,  1111 => 316,  1108 => 315,  1105 => 314,  1102 => 313,  1099 => 312,  1096 => 311,  1094 => 310,  1091 => 309,  1084 => 305,  1080 => 304,  1075 => 303,  1073 => 302,  1070 => 301,  1063 => 296,  1060 => 295,  1052 => 290,  1049 => 289,  1047 => 288,  1044 => 287,  1036 => 282,  1032 => 281,  1028 => 280,  1025 => 279,  1023 => 278,  1020 => 277,  1012 => 273,  1010 => 269,  1008 => 268,  1005 => 267,  1000 => 263,  978 => 258,  975 => 257,  972 => 256,  969 => 255,  966 => 254,  963 => 253,  960 => 252,  957 => 251,  954 => 250,  951 => 249,  948 => 248,  946 => 247,  943 => 246,  935 => 240,  932 => 239,  930 => 238,  927 => 237,  919 => 233,  916 => 232,  914 => 231,  911 => 230,  899 => 226,  896 => 225,  893 => 224,  890 => 223,  888 => 222,  885 => 221,  877 => 217,  874 => 216,  872 => 215,  869 => 214,  861 => 210,  858 => 209,  856 => 208,  853 => 207,  845 => 203,  842 => 202,  840 => 201,  837 => 200,  829 => 196,  826 => 195,  824 => 194,  821 => 193,  813 => 189,  810 => 188,  808 => 187,  805 => 186,  797 => 182,  794 => 181,  789 => 179,  781 => 175,  779 => 174,  776 => 173,  768 => 169,  765 => 168,  763 => 167,  760 => 166,  752 => 162,  749 => 161,  747 => 160,  735 => 153,  725 => 152,  720 => 151,  717 => 150,  711 => 148,  708 => 147,  703 => 145,  695 => 139,  693 => 138,  692 => 137,  691 => 136,  685 => 134,  679 => 132,  676 => 131,  674 => 130,  671 => 129,  662 => 123,  658 => 122,  654 => 121,  650 => 120,  639 => 117,  636 => 116,  634 => 115,  631 => 114,  615 => 110,  613 => 109,  610 => 108,  594 => 104,  592 => 103,  589 => 102,  572 => 98,  560 => 96,  553 => 93,  551 => 92,  546 => 91,  543 => 90,  523 => 88,  511 => 82,  508 => 81,  505 => 80,  499 => 78,  497 => 77,  492 => 76,  489 => 75,  486 => 74,  471 => 72,  459 => 69,  456 => 68,  450 => 64,  442 => 62,  433 => 60,  428 => 59,  426 => 58,  414 => 52,  405 => 49,  403 => 48,  400 => 47,  390 => 43,  388 => 42,  385 => 41,  377 => 37,  366 => 33,  350 => 26,  316 => 16,  313 => 15,  311 => 14,  308 => 13,  299 => 8,  273 => 377,  271 => 371,  266 => 363,  260 => 360,  250 => 338,  245 => 332,  240 => 323,  238 => 309,  230 => 300,  225 => 295,  217 => 286,  215 => 277,  204 => 264,  186 => 236,  179 => 221,  159 => 193,  146 => 178,  129 => 145,  124 => 129,  110 => 38,  77 => 25,  356 => 328,  339 => 316,  295 => 275,  65 => 17,  806 => 488,  803 => 487,  792 => 180,  788 => 484,  784 => 482,  771 => 481,  745 => 159,  742 => 158,  723 => 473,  706 => 146,  702 => 470,  698 => 469,  694 => 468,  690 => 135,  686 => 466,  682 => 465,  678 => 464,  675 => 463,  673 => 462,  656 => 461,  645 => 119,  630 => 455,  625 => 453,  621 => 452,  618 => 451,  616 => 450,  602 => 449,  565 => 414,  547 => 411,  530 => 410,  527 => 409,  525 => 89,  520 => 87,  515 => 404,  244 => 136,  188 => 90,  389 => 160,  386 => 159,  378 => 157,  371 => 35,  367 => 155,  358 => 151,  345 => 147,  343 => 146,  340 => 145,  334 => 141,  331 => 140,  328 => 139,  326 => 138,  307 => 128,  302 => 125,  296 => 121,  293 => 6,  290 => 5,  281 => 385,  276 => 378,  269 => 107,  259 => 103,  253 => 339,  232 => 88,  227 => 298,  222 => 294,  210 => 267,  184 => 230,  170 => 84,  155 => 47,  152 => 46,  127 => 35,  363 => 32,  357 => 123,  353 => 149,  344 => 24,  332 => 20,  327 => 114,  324 => 113,  321 => 135,  318 => 111,  306 => 107,  297 => 276,  291 => 102,  288 => 4,  274 => 110,  265 => 105,  263 => 362,  255 => 350,  243 => 324,  231 => 83,  212 => 276,  202 => 263,  190 => 76,  174 => 214,  104 => 87,  175 => 58,  161 => 199,  118 => 49,  100 => 36,  462 => 202,  449 => 198,  446 => 197,  441 => 196,  439 => 195,  431 => 189,  429 => 188,  422 => 184,  415 => 180,  408 => 50,  401 => 172,  394 => 168,  380 => 158,  373 => 156,  361 => 152,  351 => 120,  348 => 140,  342 => 23,  338 => 135,  335 => 21,  329 => 131,  325 => 129,  323 => 128,  320 => 127,  315 => 131,  303 => 106,  300 => 105,  289 => 113,  286 => 112,  275 => 105,  270 => 102,  267 => 101,  262 => 98,  256 => 96,  248 => 333,  233 => 301,  226 => 84,  216 => 79,  213 => 78,  207 => 266,  200 => 72,  197 => 246,  194 => 245,  191 => 243,  185 => 74,  181 => 229,  178 => 59,  172 => 57,  153 => 77,  150 => 55,  134 => 158,  113 => 40,  102 => 30,  90 => 27,  81 => 40,  59 => 13,  34 => 4,  97 => 23,  76 => 31,  20 => 1,  58 => 15,  63 => 21,  23 => 4,  53 => 11,  480 => 162,  474 => 161,  469 => 71,  461 => 70,  457 => 153,  453 => 199,  444 => 149,  440 => 148,  437 => 61,  435 => 146,  430 => 144,  427 => 143,  423 => 57,  413 => 134,  409 => 132,  407 => 131,  402 => 130,  398 => 129,  393 => 126,  387 => 164,  384 => 121,  381 => 120,  379 => 119,  374 => 36,  368 => 34,  365 => 111,  362 => 110,  360 => 109,  355 => 27,  341 => 118,  337 => 22,  322 => 101,  314 => 99,  312 => 130,  309 => 129,  305 => 95,  298 => 120,  294 => 90,  285 => 3,  283 => 115,  278 => 384,  268 => 370,  264 => 84,  258 => 351,  252 => 80,  247 => 78,  241 => 93,  235 => 308,  229 => 87,  224 => 81,  220 => 287,  214 => 69,  208 => 76,  169 => 207,  143 => 51,  140 => 58,  132 => 51,  128 => 49,  119 => 114,  107 => 37,  71 => 19,  177 => 65,  165 => 83,  160 => 61,  135 => 47,  126 => 144,  114 => 108,  84 => 41,  70 => 19,  67 => 16,  61 => 2,  38 => 5,  94 => 57,  89 => 47,  85 => 26,  75 => 22,  68 => 12,  56 => 12,  87 => 26,  21 => 2,  26 => 3,  93 => 28,  88 => 30,  78 => 24,  46 => 14,  27 => 4,  44 => 8,  31 => 3,  28 => 3,  201 => 92,  196 => 92,  183 => 70,  171 => 213,  166 => 206,  163 => 82,  158 => 80,  156 => 192,  151 => 185,  142 => 59,  138 => 57,  136 => 165,  121 => 128,  117 => 39,  105 => 25,  91 => 56,  62 => 14,  49 => 12,  25 => 3,  24 => 2,  19 => 1,  79 => 32,  72 => 18,  69 => 13,  47 => 9,  40 => 11,  37 => 7,  22 => 2,  246 => 96,  157 => 56,  145 => 74,  139 => 166,  131 => 157,  123 => 61,  120 => 31,  115 => 40,  111 => 107,  108 => 33,  101 => 86,  98 => 29,  96 => 67,  83 => 30,  74 => 20,  66 => 12,  55 => 12,  52 => 12,  50 => 10,  43 => 11,  41 => 7,  35 => 4,  32 => 6,  29 => 3,  209 => 82,  203 => 73,  199 => 262,  193 => 73,  189 => 237,  187 => 75,  182 => 87,  176 => 220,  173 => 85,  168 => 61,  164 => 200,  162 => 59,  154 => 186,  149 => 179,  147 => 75,  144 => 173,  141 => 172,  133 => 55,  130 => 46,  125 => 42,  122 => 41,  116 => 113,  112 => 39,  109 => 102,  106 => 101,  103 => 37,  99 => 68,  95 => 34,  92 => 31,  86 => 46,  82 => 25,  80 => 24,  73 => 23,  64 => 3,  60 => 20,  57 => 19,  54 => 19,  51 => 37,  48 => 10,  45 => 8,  42 => 7,  39 => 10,  36 => 5,  33 => 4,  30 => 3,);
     }
 }

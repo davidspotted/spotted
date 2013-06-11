@@ -18,7 +18,7 @@ class __TwigTemplate_c8831bfb4846bd62f7a0b0905bf78e57 extends Twig_Template
         // line 1
         if ($this->getAttribute($this->getContext($context, "trace"), "function")) {
             // line 2
-            echo "                at ";
+            echo "    at ";
             echo twig_escape_filter($this->env, (($this->getAttribute($this->getContext($context, "trace"), "class") . $this->getAttribute($this->getContext($context, "trace"), "type")) . $this->getAttribute($this->getContext($context, "trace"), "function")), "html", null, true);
             echo "(";
             echo twig_escape_filter($this->env, $this->env->getExtension('code')->formatArgsAsText($this->getAttribute($this->getContext($context, "trace"), "args")), "html", null, true);
@@ -26,13 +26,13 @@ class __TwigTemplate_c8831bfb4846bd62f7a0b0905bf78e57 extends Twig_Template
 ";
         } else {
             // line 4
-            echo "                at n/a
+            echo "    at n/a
 ";
         }
         // line 6
         if (($this->getAttribute($this->getContext($context, "trace", true), "file", array(), "any", true, true) && $this->getAttribute($this->getContext($context, "trace", true), "line", array(), "any", true, true))) {
             // line 7
-            echo "                    in ";
+            echo "        in ";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getContext($context, "trace"), "file"), "html", null, true);
             echo " line ";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getContext($context, "trace"), "line"), "html", null, true);
@@ -53,6 +53,6 @@ class __TwigTemplate_c8831bfb4846bd62f7a0b0905bf78e57 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  91 => 20,  84 => 19,  94 => 39,  88 => 6,  79 => 39,  59 => 22,  21 => 2,  44 => 10,  31 => 5,  28 => 3,  225 => 96,  216 => 90,  212 => 88,  205 => 84,  201 => 83,  196 => 80,  194 => 79,  191 => 78,  189 => 77,  186 => 76,  180 => 72,  172 => 67,  159 => 61,  154 => 59,  147 => 55,  132 => 48,  127 => 46,  121 => 45,  118 => 44,  114 => 43,  104 => 36,  100 => 34,  78 => 28,  75 => 27,  71 => 26,  58 => 22,  34 => 11,  26 => 3,  25 => 4,  24 => 2,  19 => 1,  70 => 14,  63 => 24,  46 => 11,  22 => 2,  163 => 63,  155 => 50,  152 => 49,  149 => 48,  145 => 46,  139 => 45,  131 => 42,  123 => 41,  120 => 40,  115 => 39,  106 => 36,  101 => 33,  96 => 31,  83 => 25,  80 => 24,  74 => 16,  66 => 15,  55 => 13,  52 => 15,  50 => 14,  43 => 7,  41 => 9,  37 => 8,  35 => 7,  32 => 4,  29 => 4,  184 => 70,  178 => 71,  171 => 62,  165 => 58,  162 => 57,  157 => 60,  153 => 54,  151 => 53,  143 => 54,  138 => 51,  136 => 50,  133 => 43,  130 => 47,  122 => 37,  119 => 36,  116 => 35,  111 => 38,  108 => 37,  102 => 30,  98 => 32,  95 => 31,  92 => 29,  89 => 26,  85 => 24,  81 => 40,  73 => 19,  64 => 19,  60 => 23,  57 => 14,  54 => 6,  51 => 12,  48 => 14,  45 => 8,  42 => 6,  39 => 8,  36 => 7,  33 => 6,  30 => 3,);
+        return array (  29 => 4,  42 => 14,  38 => 13,  35 => 7,  26 => 5,  87 => 20,  55 => 13,  31 => 5,  25 => 3,  21 => 2,  94 => 22,  92 => 21,  89 => 20,  85 => 19,  79 => 18,  75 => 17,  72 => 16,  68 => 14,  64 => 12,  56 => 9,  50 => 8,  41 => 9,  24 => 4,  201 => 92,  199 => 91,  196 => 90,  187 => 84,  183 => 82,  173 => 74,  171 => 73,  168 => 72,  166 => 71,  163 => 70,  158 => 67,  156 => 66,  151 => 63,  142 => 59,  138 => 57,  136 => 56,  133 => 55,  123 => 47,  121 => 46,  117 => 44,  115 => 43,  112 => 42,  105 => 40,  101 => 24,  91 => 31,  86 => 28,  69 => 25,  66 => 15,  62 => 23,  51 => 15,  49 => 19,  39 => 6,  19 => 1,  98 => 40,  93 => 9,  88 => 6,  80 => 19,  78 => 40,  46 => 7,  44 => 10,  36 => 7,  32 => 12,  27 => 4,  22 => 2,  57 => 16,  54 => 21,  43 => 8,  40 => 8,  33 => 6,  30 => 3,);
     }
 }

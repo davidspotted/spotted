@@ -22,20 +22,15 @@ security:
             security: false
         
         public:
-           pattern: .*
-           security: false
+           pattern: ^/
            anonymous: true
            form_login:
                 check_path: /{_locale}/login_check
-                
-        login:
-           pattern: ^/{_locale}
-           security: false
-           anonymous:  ~
+                login_path: /{_locale}
            
         secured_area:
            provider: main
-           pattern: ^/{_locale}/home/.*
+           pattern: ^/{_locale}/home/
            form_login:
                check_path: /{_locale}/login_check
                login_path: /{_locale}
